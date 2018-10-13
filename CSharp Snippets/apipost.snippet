@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>apipost</Title>
+			<Shortcut>apipost</Shortcut>
+			<Description>Code snippet for an automatically implemented POST request
+Language Version: C# 3.0 or higher</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Method Name</ToolTip>
+					<Default>MethodName</Default>
+				</Literal>
+				<Literal>
+					<ID>parameterType</ID>
+					<ToolTip>Parameter Type</ToolTip>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>parameterName</ID>
+					<ToolTip>Parameter Name</ToolTip>
+					<Default>parameter</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[
+			[HttpPost]
+			public void $name$($parameterType$ $parameterName$) 
+			{ 				
+				
+			}$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
